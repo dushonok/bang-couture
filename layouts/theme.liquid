@@ -1,0 +1,504 @@
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}
+{% comment %}ly_static_code_begin{% endcomment %}{% capture ly_content %}{% comment %}ly_static_code_end{% endcomment %}{% comment %}ly_settings_replace_for_[c4acfcde9140ce7125e169aa2f08df18=settings.welcome-3]_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% assign namespace = language | append: "as" %}{% if shop.metafields[namespace]["id189011"] %}{% assign c4acfcde9140ce7125e169aa2f08df18 = shop.metafields[namespace]["id189011"] %}{% else %}{% assign c4acfcde9140ce7125e169aa2f08df18 = settings.welcome-3 %}{% endif %}{% comment %}ly_settings_replace_end{% endcomment %}{% comment %}ly_settings_replace_for_[aa13206601d703aecd58f1a83e27df7e=settings.welcome-2]_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% assign namespace = language | append: "as" %}{% if shop.metafields[namespace]["id189010"] %}{% assign aa13206601d703aecd58f1a83e27df7e = shop.metafields[namespace]["id189010"] %}{% else %}{% assign aa13206601d703aecd58f1a83e27df7e = settings.welcome-2 %}{% endif %}{% comment %}ly_settings_replace_end{% endcomment %}{% comment %}ly_settings_replace_for_[fdbc88589e2f5cf981884da79ddb8c4c=settings.welcome-1]_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% assign namespace = language | append: "as" %}{% if shop.metafields[namespace]["id189009"] %}{% assign fdbc88589e2f5cf981884da79ddb8c4c = shop.metafields[namespace]["id189009"] %}{% else %}{% assign fdbc88589e2f5cf981884da79ddb8c4c = settings.welcome-1 %}{% endif %}{% comment %}ly_settings_replace_end{% endcomment %}
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="{% comment %}ly_lang_replace_for_[en]_begin{% endcomment %}{% if request.host %}{% assign language = '' %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains request.host %}{% assign language = key %}{% endif %}{% endfor %}{% if shop.metafields.language_codes[language] %}{% assign code = shop.metafields.language_codes[language] %}{% else %}{% assign code = 'en' %}{% endif %}{% else %}{% assign code = 'en' %}{% endif %}{{ code }}{% comment %}ly_lang_replace_end{% endcomment %}"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% if shop.metafields.languages_dir[language] == 'rtl' %} dir="rtl" {% endif %}{% comment %}ly_dir_replace_end{% endcomment %}> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="{% comment %}ly_lang_replace_for_[en]_begin{% endcomment %}{% if request.host %}{% assign language = '' %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains request.host %}{% assign language = key %}{% endif %}{% endfor %}{% if shop.metafields.language_codes[language] %}{% assign code = shop.metafields.language_codes[language] %}{% else %}{% assign code = 'en' %}{% endif %}{% else %}{% assign code = 'en' %}{% endif %}{{ code }}{% comment %}ly_lang_replace_end{% endcomment %}"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% if shop.metafields.languages_dir[language] == 'rtl' %} dir="rtl" {% endif %}{% comment %}ly_dir_replace_end{% endcomment %}> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="{% comment %}ly_lang_replace_for_[en]_begin{% endcomment %}{% if request.host %}{% assign language = '' %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains request.host %}{% assign language = key %}{% endif %}{% endfor %}{% if shop.metafields.language_codes[language] %}{% assign code = shop.metafields.language_codes[language] %}{% else %}{% assign code = 'en' %}{% endif %}{% else %}{% assign code = 'en' %}{% endif %}{{ code }}{% comment %}ly_lang_replace_end{% endcomment %}"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% if shop.metafields.languages_dir[language] == 'rtl' %} dir="rtl" {% endif %}{% comment %}ly_dir_replace_end{% endcomment %}> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="{% comment %}ly_lang_replace_for_[en]_begin{% endcomment %}{% if request.host %}{% assign language = '' %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains request.host %}{% assign language = key %}{% endif %}{% endfor %}{% if shop.metafields.language_codes[language] %}{% assign code = shop.metafields.language_codes[language] %}{% else %}{% assign code = 'en' %}{% endif %}{% else %}{% assign code = 'en' %}{% endif %}{{ code }}{% comment %}ly_lang_replace_end{% endcomment %}"{% comment %}ly_dir_replace_for_[]_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% if shop.metafields.languages_dir[language] == 'rtl' %} dir="rtl" {% endif %}{% comment %}ly_dir_replace_end{% endcomment %}> <!--<![endif]-->
+<head> 
+  
+
+  
+  <style type="text/css">
+	#mc_embed_signup{ width: 100%; background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif ! important; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	#mc-embedded-subscribe {
+  		float: none ! important;
+}
+</style>
+  
+  {% assign font = "'Arvo', serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  {% endif %}  
+  
+  {% assign font = "'Glegoo', serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
+  {% endif %}
+
+  {% assign font = "'Lato', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  {% endif %}  
+  
+  {% assign font = "'Lobster', cursive" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  {% endif %}   
+
+  {% assign font = "'Lobster Two', cursive" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
+  {% endif %}   
+
+  {% assign font = "'Montserrat', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  {% endif %}  
+
+  {% assign font = "'Noticia Text', serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
+  {% endif %}     
+
+  {% assign font = "'Open Sans', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  {% endif %}  
+  
+  {% assign font = "'Open Sans Condensed', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  {% endif %}
+  
+  {% assign font = "'Oswald', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  {% endif %}
+  
+  {% assign font = "'PT Sans', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  {% endif %}    
+
+  {% assign font = "'PT Sans Narrow', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+  {% endif %} 
+  
+  {% assign font = "'Questrial', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  {% endif %}   
+  
+  {% assign font = "'Raleway', sans-serif" %}
+  {% if settings.logo-font == font or settings.font == font or settings.headings_font == font or settings.navigation-font == font or settings.title-font == font or settings.caption-font == font %}
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  {% endif %}    
+  <meta charset="utf-8" />
+  
+  <!-- Basic Page Needs
+================================================== -->
+
+  <title>
+    {% if template == 'index' %}{% if langify_title contains 'Welcome' %}{{ langify_shop_name }} <ly-as-189295>– Welcome</ly-as-189295>{% else %}{{ langify_title }}{% endif %}{% elsif template == '404' %}<ly-as-189000>Page Not Found</ly-as-189000>{% elsif langify_title contains langify_shop_name %}{{ langify_title }}{% else %}{{ langify_title }} – {{ langify_shop_name }}{% endif %}
+  </title>
+  {% if langify_description %}
+  <meta name="description" content="{{ langify_description }}" />
+  {% endif %}
+  <link rel="canonical" href="{{ canonical_langify_url }}" />  
+  
+  
+  <!-- CSS
+================================================== -->
+  
+  {% comment %}ly_asset_replace_for_[ 'stylesheet.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'stylesheet.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'font-awesome.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'font-awesome.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'flexslider.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'flexslider.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'queries.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'queries.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'jquery.fancybox.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.fancybox.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'jquery.fs.selecter.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.fs.selecter.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  
+  <!--[if IE 7]>
+{% comment %}ly_asset_replace_for_[ 'font-awesome-ie7.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'font-awesome-ie7.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+<![endif]-->
+  
+  <!-- JS
+================================================== -->
+  
+  
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+  
+  {% comment %}ly_asset_replace_for_[ 'theme.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'theme.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %} 
+  {{ 'option_selection.js' | shopify_asset_url | script_tag }}  
+  {% comment %}ly_asset_replace_for_[ 'handlebars.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'handlebars.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'api.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'api.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}  
+  {% comment %}ly_asset_replace_for_[ 'jquery.flexslider.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.flexslider.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'jquery.fs.selecter.min.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.fs.selecter.min.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'jquery.fancybox.pack.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.fancybox.pack.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'jquery.mousewheel-3.0.6.pack.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.mousewheel-3.0.6.pack.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'jquery.easing.1.3.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.easing.1.3.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% comment %}ly_asset_replace_for_[ 'jquery.placeholder.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.placeholder.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+    {% comment %}ly_asset_replace_for_[ 'jquery.zoom.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.zoom.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  
+  {% if template contains 'blog' %}
+  {% comment %}ly_asset_replace_for_[ 'instafeed.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'instafeed.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+  {% endif %}
+  
+<!--[if lt IE 9]>
+<span>109795324596994282486442020668228082860</span>
+<![endif]-->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Favicons
+================================================== -->
+  
+  <link rel="shortcut icon" href="{% comment %}ly_asset_replace_for_[ 'favicon.png' | asset_url ]_begin{% endcomment %}{% assign ly_asset = 'favicon.png' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  }}{% comment %}ly_asset_replace_end{% endcomment %}">
+  
+  {% if template contains 'customers' %}
+  {{ "shopify_common.js" | shopify_asset_url | script_tag }}
+  {{ "customer_area.js"  | shopify_asset_url | script_tag }}
+  {% endif %}
+  
+  {{ content_for_header }}
+  
+{% include 'sca-quick-view-init' %} {% comment %}ly_dir_styles_begin{% endcomment %}{% if request.host %}{% assign host = request.host %}{% assign domains = shop.metafields.language_domains %}{% for domain in domains %}{% assign key = domain | first %}{% assign value = domain | last | split: ',' %}{% if value contains host %}{% assign language = key %}{% endif %}{% endfor %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% else %}{% assign language = cart.attributes["language"] %}{% if language == nil %}{% assign language = shop.metafields["languages"]["default"] %}{% endif %}{% endif %}{% if shop.metafields.languages_dir[language] == 'rtl' %}{% comment %}ly_asset_replace_for_[ 'ly-rtl.css' | asset_url | stylesheet_tag ]_begin{% endcomment %}{% assign ly_asset = 'ly-rtl.css' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | stylesheet_tag }}{% comment %}ly_asset_replace_end{% endcomment %}{% endif %}{% comment %}ly_dir_styles_end{% endcomment %}{% comment %}ly_static_code_begin{% endcomment %}{% for language in shop.metafields.languages %}{% assign language_key = language | first %}{% if language_key != 'default' %}{% assign split_domains = shop.metafields.language_domains[language_key] | split: ',' %}{% assign language_domain = split_domains[0] %}{% if language_domain %}{% assign language_code = shop.metafields.language_codes[language_key] %}{% if language_code %}{% assign currentUrl = '/' | append: template %}{% if template contains 'page' %}{% assign currentUrl = page.url %}{% elsif template contains 'blog' %}{% assign currentUrl = blog.url %}{% elsif template contains 'article' %}{% assign currentUrl = article.url %}{% elsif template contains 'collection' %}{% if collection.url == '' %}{% assign currentUrl = '/collections/all' %}{% else %}{% assign currentUrl = collection.url %}{% endif %}{% elsif template contains 'product' %}{% if collection.url == '' %}{% assign currentUrl = product.url %}{% else %}{% assign currentUrl = collection.url | append: product.url %}{% endif %}{% elsif template contains 'cart' %}{% assign currentUrl = '/cart' %}{% elsif template contains 'search' %}{% assign currentUrl = '/search' %}{% elsif template == 'customers/account' %}{% assign currentUrl = '/account' %}{% elsif template contains 'customers/' %}{% assign currentUrl = currentUrl | replace:'customers', 'account' %}{% endif %}{% if currentUrl == '/index' or currentUrl == '/404' %}{% assign currentUrl = '/' %}{% endif %}{{ '<link rel="alternate" hreflang="' | append: language_code | append: '" href="http://' | append: language_domain | append: currentUrl | append: '" />' }}{% endif %}{% endif %}{% endif %}{% endfor %}{% comment %}ly_static_code_end{% endcomment %}
+{% include 'iwish' with 'iwishhead' %}
+
+
+
+
+</head>
+
+<body class="gridlock {{ template }}">
+  
+  <div class="page-wrap">
+    <div id="header" class="row">
+      
+      <div id="identity">
+        
+          <div id="ly-languages-switcher" class="ly-languages-switcher-link"> {% include 'ly-languages-switcher' %}</div>
+         <ul id="cart" class="desktop-4 tablet-2">
+          
+          {% if shop.customer_accounts_enabled %}
+          <li>
+            {% if customer  %}
+            <a href="/account"><ly-as-189001>My Account</ly-as-189001>  <i class="icon-user"></i></a>
+            {% else %}
+            <a href="/account/login"><ly-as-189001>My Account</ly-as-189001>  <i class="icon-user"></i></a>
+            {% endif %}
+          </li>
+          {% endif %}
+          <li>
+             {% include 'iwish' with 'iwishlink' %}
+          </li>
+          <li class="cart-overview"><a href="/cart"><ly-as-189002>My Shopping Cart</ly-as-189002> <i class="icon-shopping-cart"></i><span id="item_count">{{ cart.item_count }}</span></a>
+            <div id="crt">
+              {% include 'shopping-cart' %}
+              {% if cart.item_count != 0 %}
+              <a class="checkout-link" href="/cart"><ly-as-197747>Checkout</ly-as-197747></a>
+              {% endif %}
+            </div>            
+          </li>
+		</ul> 
+        
+        <div class="tablet-6 mobile-3">       
+          {% if settings.use_logo_image %}
+          <a id="logo" href="/" title="{{ langify_shop_name }}"> </a>
+          {% else %}
+          <h1><a href="/">{{ langify_shop_name }}</a></h1>
+          {% endif %}           
+        </div>  
+        
+<!--href="#subscribe_popup-->
+        <ul id="social-links" class="desktop-push-3 desktop-3">
+          <li><a id="inline" href="mailto:lida.eisenbruk@bangcouture.com" class="open_popup"><i class="icon-envelope"></i></a></li>
+          {% if settings.show_facebook %}<li><a href="{{ settings.facebook_url }}" target="_blank"><i class="icon-facebook"></i></a></li>{% endif %}
+          {% if settings.show_twitter %}<li><a href="http://www.twitter.com/{{ settings.twittername }}" target="_blank"><i class="icon-twitter"></i></a></li>{% endif %}
+          {% if settings.show_pinterest %}<li><a href="{{ settings.pinterest_url }}" target="_blank"><i class="icon-pinterest"></i></a></li>{% endif %}
+          {% if settings.show_tumblr %}<li><a href="{{ settings.tumblr_url }}" target="_blank"><i class="icon-tumblr"></i></a></li>{% endif %}
+          {% if settings.show_youtube %}<li><a href="{{ settings.youtube_url }}" target="_blank"><i class="icon-youtube"></i></a></li>{% endif %}
+          {% if settings.show_googleplus %}<li><a href="{{ settings.googleplus_url }}" target="_blank"><i class="icon-google-plus"></i></a></li>{% endif %}
+          {% if settings.show_instagram %}<li><a href="http://instagram.com/{{ settings.instagram-id }}" target="_blank"><i class="icon-instagram"></i></a></li>{% endif %}
+          {% if settings.show_rss %}<li><a href="{{ langify_shop_url }}/blogs/news.atom" target="_blank"><i class="icon-rss"></i></a></li>{% endif %}
+        </ul>                
+
+        <ul id="mobile-cart" class="mobile-3">    
+          {% if shop.customer_accounts_enabled %}
+          <li>
+            {% if customer  %}
+            <a href="/account"><ly-as-189001>My Account</ly-as-189001> <i class="icon-user"></i></a>
+            {% else %}
+            <a href="/account/login"><ly-as-189001>My Account</ly-as-189001> <i class="icon-user"></i></a>
+           
+            {% endif %}
+          </li>
+          {% endif %}
+          <li>
+            <a href="/cart"><ly-as-189004>Shopping Cart</ly-as-189004> <i class="icon-shopping-cart"></i>{% if cart.item_count != 0 %} <span class="smallcash">{{ cart.total_price | money }}</span>{% endif %}</a>
+          </li>
+          <a href="/apps/mywishlist">My Wishlist</a>
+        </ul>
+
+      </div>
+      
+      
+      <div id="navigation" class="desktop-12 tablet-6 mobile-3">      
+        <nav id="nav" role="navigation">
+          <a href="#nav" title="<ly-as-189005>Show navigation</ly-as-189005>" class="mnav"><ly-as-189005>Show navigation</ly-as-189005></a>
+          <a href="#" title="<ly-as-189006>Hide navigation</ly-as-189006>"class="mnav"><ly-as-189006>Hide navigation</ly-as-189006></a>
+          
+          <ul id="nav">
+            {% for link in linklists.main-menu.links %}
+            <li>{% comment %}ly_code_replace_for_[ link.title | link_to: link.url ]_begin{% endcomment %}{% include 'ly-title' with link %}{% assign b4746a83cc900946bc793cd99c77ce06 = ly_translation %}{{ b4746a83cc900946bc793cd99c77ce06 | link_to: link.url }}{% comment %}ly_code_replace_end{% endcomment %}
+              {% capture child_list_handle %}{{ link.title | handleize }}{% endcapture %}
+              {% if linklists[child_list_handle] and linklists[child_list_handle].links.size > 0 %}
+              <ul class="submenu">
+                {% for l in linklists[child_list_handle].links %}
+                <li><a href="{{ l.url }}">{% comment %}ly_code_replace_for_[ l.title ]_begin{% endcomment %}{% include 'ly-title' with l %}{% assign 54da652a9086480ae6b9d390754ddfd0 = ly_translation %}{{ 54da652a9086480ae6b9d390754ddfd0 }}{% comment %}ly_code_replace_end{% endcomment %}</a></li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+              
+               
+              
+            </li>
+            {% endfor %}
+
+           
+         <ul id="navright">
+           <li id="shipping">(Some conditions apply)</li>
+           <li id="shipping"><a href="/pages/shipping-conditions"><strong><ly-as-189007>FREE SHIPPING</ly-as-189007></strong> </a></li>
+           
+           </ul></ul> 
+        </nav>	        
+      </div> 
+      
+    </div>  
+      
+    <div class="row">
+      {% if template == 'index' %}
+      {% if settings.welcome-bar %}
+      <div id="types" class="desktop-12 tablet-6 mobile-3">
+        <ul id="welcome-bar">
+          <li>{{ fdbc88589e2f5cf981884da79ddb8c4c }}</li>
+          <li class="mid">{{ aa13206601d703aecd58f1a83e27df7e }}</li>
+          <li>{{ c4acfcde9140ce7125e169aa2f08df18 }}</li>
+        </ul>
+      </div>
+      {% endif %}
+      {% endif %}     
+      
+      {% if template contains 'collection' %}
+      {% if settings.shop-by-type %}
+      <div id="types" class="desktop-12 tablet-6 mobile-3">
+        <ul>
+          <li><strong><ly-as-189012>SHOP by TYPE:</ly-as-189012></strong></li>
+          <li><a href="/collections/all"><ly-as-189013>All</ly-as-189013></a></li>
+          {% assign typeList = '' %}
+          {% for product in collections.all.products %}
+          {% capture type %}{% comment %}ly_code_replace_for_[product.type]_begin{% endcomment %}{% include 'ly-type' with product %}{% assign fe2a7cb20aa30eba031b0b32702324a4 = ly_translation %}{{fe2a7cb20aa30eba031b0b32702324a4}}{% comment %}ly_code_replace_end{% endcomment %}{% endcapture %}
+          {% unless typeList contains type %}
+          <li>{{ product.type | link_to_type }}</li>
+          {% capture temp %}{{typeList}}{% comment %}ly_code_replace_for_[product.type]_begin{% endcomment %}{% include 'ly-type' with product %}{% assign fe2a7cb20aa30eba031b0b32702324a4 = ly_translation %}{{fe2a7cb20aa30eba031b0b32702324a4}}{% comment %}ly_code_replace_end{% endcomment %}{% endcapture %}
+          {% assign typeList = temp %}
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endif %}
+      
+      {% if template contains 'blog' or template contains 'article' %}
+      {% if settings.articles %}
+      <div id="types" class="desktop-12 tablet-6 mobile-3">
+        <ul>
+          <li><strong><ly-as-189014>Recent Articles:</ly-as-189014></strong></li>
+          {% for article in blog.articles limit: 3 %}
+          <li><a href="{{article.url}}">{% comment %}ly_code_replace_for_[ article.title ]_begin{% endcomment %}{% include 'ly-title' with article %}{% assign 70e1e0048775943f66a03c3019b34ed3 = ly_translation %}{{ 70e1e0048775943f66a03c3019b34ed3 }}{% comment %}ly_code_replace_end{% endcomment %}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endif %}    
+      
+    </div>
+      
+    <div class="clear"></div>
+     
+    
+    {% if template == 'index' %}	
+    {{ content_for_layout }}
+    {% else %}	
+    <div id="content" class="row">	
+      {% if template != 'index' %}
+      {% if settings.breadcrumb %}
+      {% include 'breadcrumb' %}	
+      {% endif %}	
+      {% endif %}
+      {{ content_for_layout }}  
+    </div>
+    {% endif %}
+
+    
+    
+  </div>  <!-- End page wrap for sticky footer -->
+  
+  <div id="footer-wrapper">	
+    <div id="footer" class="row">	
+      
+
+      
+      <ul class="footer-left desktop-12 tablet-6 mobile-3">
+        {% for link in linklists.footer.links %}
+        <li>{% comment %}ly_code_replace_for_[ link.title | link_to: link.url ]_begin{% endcomment %}{% include 'ly-title' with link %}{% assign b4746a83cc900946bc793cd99c77ce06 = ly_translation %}{{ b4746a83cc900946bc793cd99c77ce06 | link_to: link.url }}{% comment %}ly_code_replace_end{% endcomment %}</li>
+        {% endfor %}
+      </ul>	 
+    
+    </div> 
+    <div id="securitybadge"><a href="http://www.shopify.com/?utm_source=secure&amp;utm_medium=shop" title="This online store is secured by Shopify" target="_blank"><img src="//cdn.shopify.com/s/images/badges/shopify-secure-badge-light-shadow.png" alt="Shopify secure badge" /></a></div>
+  </div>
+  
+      {% if settings.credit %}
+        <div class="credit desktop-12">
+          <p>{{ powered_by_link }} • <a href="http://www.shopifythemes.net" target="_blank"><ly-as-189016>Shopify Theme</ly-as-189016></a> <a href="http://www.undergroundmedia.co.uk"><ly-as-189017>Design by Underground Media</ly-as-189017></a></p>
+        </div>
+        {% endif %}    
+  
+  {% include 'mailing' %}
+  
+  <ly-as-201662>{% raw %}
+  <script id="cartTemplate" type="text/x-handlebars-template">
+ 
+  {{#each items}}
+    <div id="cart-item">
+      <div class="quick-cart-image">
+        <a href="{{ this.url }}" title="{{ this.title }}">
+          <img src="{{ this.image }}"  alt="{{ this.title }}" />
+  </a>
+  </div>
+      <div class="quick-cart-details">
+        <p>
+          <a href="{{ this.url }}">{{ this.title }}</a>
+  </p>
+        <p>{{ this.price }}</p>          
+        <p>
+          <a class="remove_item" href="#" data-id="{{ this.id }}">Remove</a>
+  </p>
+  </div>
+  </div>
+  {{/each}}   
+  <a class="checkout-link" href="/cart">checkout</a>
+
+  </script>
+  
+  {% endraw %}</ly-as-201662>  
+  
+  
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-2x"></i></a>
+  
+  
+<!-- Begin Recently Viewed Products -->
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+
+// Including jQuery conditionnally.
+if (typeof jQuery === 'undefined') {
+  document.write({{ "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" | script_tag | json }});
+  document.write('<script type="text/javascript">jQuery.noConflict();<\/script>');
+}
+
+// Including api.jquery.js conditionnally.
+if (typeof Shopify.resizeImage === 'undefined') {
+  document.write({{ "api.jquery.js" | shopify_asset_url | script_tag | json }});
+}
+
+//]]>
+</script>
+
+{{ '//ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js' | script_tag }}
+{% comment %}ly_asset_replace_for_[ 'jquery.products.min.js' | asset_url | script_tag ]_begin{% endcomment %}{% assign ly_asset = 'jquery.products.min.js' %}{% include 'ly-asset' with ly_asset %}{{ ly_translation  | script_tag }}{% comment %}ly_asset_replace_end{% endcomment %}
+
+{% if template contains 'product' %}
+
+<script type="text/javascript" charset="utf-8">
+//<![CDATA[
+
+Shopify.Products.recordRecentlyViewed();
+
+//]]>
+  
+$('input, textarea').placeholder();
+  
+</script>
+{% endif %}  
+  
+  
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=127142210767229";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  
+  
+  
+  
+  
+  
+  <!-- Start of StatCounter Code for Shopify -->
+<script type="text/javascript">
+var sc_project=7524144; 
+var sc_invisible=1; 
+var sc_security="0bbaa5fe"; 
+var sc_https=1; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce tracking"
+href="http://statcounter.com/shopify/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7524144/0/0bbaa5fe/1/"
+alt="shopify analytics ecommerce
+tracking"></a></div></noscript>
+<!-- End of StatCounter Code for Shopify -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+<input type="hidden" name="_pc_params" value="{{ shop.permanent_domain }}:{{ customer.id }}" />
+{% include 'sca-quick-view-template' %}
+  {% include 'size-chart' %}
+  
+  {% comment %}ly_static_code_begin{% endcomment %}
+  {% include 'ly-languages' %}
+  {% comment %}ly_static_code_end{% endcomment %}  
+  {% comment %} {% include 'modify_lightbox_snippet' %} {% endcomment %} <!-- disabled due to loading errors -->
+{% include 'iwish' with 'iwishfooter' %}
+
+</body>
+</html>
+{% comment %}ly_static_code_begin{% endcomment %}
+{% endcapture %}{% include 'ly-static' with ly_content %}
+{% comment %}ly_static_code_end{% endcomment %}
